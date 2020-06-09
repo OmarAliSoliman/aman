@@ -1,0 +1,688 @@
+@import "https://fonts.googleapis.com/css2?family=Tajawal&display=swap";
+
+$mainColor: #000000;
+$seconColor: #b3161c;
+$topHeaderColor: #fcfcfc;
+$mainGradientColor: linear-gradient(to left, #b52553, #761366);
+
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/DINNextLTArabic-Regular.ttf");
+}
+
+input,
+select,
+textarea {
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+// start navbar
+.navbar {
+  position: relative;
+  background-color: #000000;
+  padding: 20px;
+  .navbar-brand {
+    position: absolute;
+    left: calc(50% - 140px);
+    // transform: translate(-50%);
+  }
+  .navbar-nav {
+    float: none !important;
+    width: 100%;
+    position: relative;
+    .nav-item {
+      .nav-link {
+        color: #fff;
+      }
+    }
+    .active{
+      background-color: #fff;
+      border-radius: 20px;
+      .nav-link{
+        color: #000;
+      }
+    }
+  }
+  
+  .nav-item-left{
+    position: absolute;
+    left: 0;
+  }
+  .nav-item-lettle-left{
+    left: 120px;
+  }
+
+  .navbar-toggler {
+    &:focus {
+      outline: 0;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url("../images/bars.png") !important;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+// start header
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/header.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .header-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h5 {
+      color: #fff;
+      font-size: 40px;
+    }
+    .btn {
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 0;
+      margin-top: 90px;
+      text-decoration: none;
+    }
+  }
+}
+
+// start service
+.service {
+  .head {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    h5 {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  .card {
+    border: 0;
+    margin-top: 30px;
+    img {
+      width: 90%;
+      margin: auto;
+      height: 340px;
+    }
+    h5 {
+      margin-top: 20px;
+    }
+    .btn {
+      border: 1px solid #000;
+      width: 50%;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+}
+
+// start who-us
+.who-us {
+  background-image: url("../images/who-us.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+  margin-top: 40px;
+  position: relative;
+  .who-us-content {
+    background-color: #fff;
+    width: 30%;
+    padding: 30px;
+    position: absolute;
+    margin-top: 100px;
+    height: auto;
+    h5 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    p {
+      max-width: 75%;
+      font-size: 18px;
+    }
+  }
+}
+
+// start products
+.products {
+  margin-top: 60px;
+}
+
+// start company
+.company {
+  .head {
+    margin-top: 90px;
+    h5 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .company-slider {
+    overflow: hidden;
+    .slider-item {
+      &:focus {
+        outline: 0;
+      }
+      img {
+        width: 200px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// statr wgo-us page
+.header-page {
+  height: 300px;
+  background-position: center;
+}
+
+.who-us-content {
+  margin-top: 100px;
+  .content {
+    .par {
+      margin-top: 150px;
+      h5 {
+        font-weight: bold;
+        font-size: 30px;
+      }
+    }
+    p {
+      font-size: 20px;
+    }
+    img {
+      height: 350px;
+    }
+  }
+}
+
+// start inforamtion
+.information {
+  .ui-widget {
+    font-family: "Tajawal", sans-serif;
+  }
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active,
+  a.ui-button:active,
+  .ui-button:active,
+  .ui-button.ui-state-active:hover {
+    background-color: #000 !important;
+    border: 0;
+    color: #fff;
+  }
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html .ui-button.ui-state-disabled:hover,
+  html .ui-button.ui-state-disabled:active {
+    border: 0;
+  }
+  html .ui-button.ui-state-disabled:active {
+    border: 1px solid #000;
+  }
+  .ui-widget-content {
+    border: 0;
+  }
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-right,
+  .ui-corner-tr {
+    border-top-left-radius: 0 !important;
+  }
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-right,
+  .ui-corner-tr {
+    border-top-right-radius: 0 !important;
+  }
+  .ui-accordion .ui-accordion-content {
+    padding: 1rem 0;
+  }
+  .ui-accordion .ui-accordion-header{
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 10px;
+  }
+  .ui-state-active .ui-icon, .ui-button:active .ui-icon{
+    // position: absolute;
+    // left: 10px;
+    // top: 20px;
+    float: left;
+    color: #000;
+  }
+
+  .ui-icon-triangle-1-e{
+    // position: absolute;
+    // left: 10px;
+    // top: 20px;
+    float: left;
+    color: #000;
+  }
+}
+
+// start footer
+footer {
+  background-color: $mainColor;
+  margin-top: 100px !important;
+  .logo-content-logo {
+    padding-right: 10px;
+  }
+  .logo {
+    padding-bottom: 10px;
+    text-align: right;
+    position: relative;
+    color: #fff;
+    .logo-content {
+      text-align: right;
+      p {
+        position: absolute;
+        right: 10%;
+        bottom: -1%;
+        margin: 0;
+      }
+    }
+  }
+  .help-content {
+    padding-right: 90px;
+    padding-top: 10px;
+    ul {
+      list-style-type: square;
+      li {
+        margin-top: 5px;
+      }
+    }
+  }
+  .social-content {
+    padding-right: 90px;
+    padding-top: 10px;
+    .social {
+      i {
+        display: inline-block;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 15px;
+        transition: all 0.5s ease;
+        &:hover {
+          color: #073670;
+        }
+      }
+    }
+    input {
+      padding: 10px;
+      background-color: #fff;
+      border: 0;
+      width: 100%;
+      color: #444 !important;
+      text-align: center;
+      &::placeholder {
+        color: #444;
+        opacity: 1; /* Firefox */
+      }
+    }
+    button {
+      border: 0 !important;
+      border: 1px solid #c5c5c5;
+      background-color: #c5c5c5;
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      color: #000;
+      margin-bottom: 10px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: #06162a;
+        color: #fff;
+      }
+    }
+  }
+  .copy {
+    background-color: $mainColor;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid rgb(20, 20, 20);
+    h5 {
+      margin: 0;
+      font-size: 15px;
+      color: #fff;
+      margin-top: 20px;
+      float: right;
+    }
+    .logo-funun {
+      width: 50%;
+      float: left;
+      text-align: left;
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+
+// start public inforamtion page
+.covid-pic {
+  margin-top: -60px;
+  img{
+    height: 340px;
+  }
+}
+
+// start single-serv-content
+.single-serv-content{
+  h5{
+    font-size: 25px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+
+.get-service-form{
+  .head{
+    margin-top: 85px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+}
+
+.our-product-content{
+  margin-top: 50px;
+  .our-produc-img{
+    height: 200px;
+  }
+  .our-product-info{
+    margin-top: 60px;
+    h5{
+      display: inline-block;
+      font-size: 30px;
+    }
+    .price{
+      font-size: 35px;
+    }
+    p{
+      font-size: 18px;
+      color: #555;
+    }
+  }
+}
+
+.relate-product-head{
+  text-align: right;
+  margin-bottom: 0 !important;
+  margin-top: 100px !important;
+}
+
+
+// start contact us
+.map-frame{
+  .ifrema-map{
+    margin-top: -90px;
+  }
+}
+
+.contact-information {
+  .card {
+    border: 0;
+    margin-top: 35px;
+    border-right: 1px solid #f5f5f5;
+    border-radius: 0;
+    .header-i {
+      font-size: 30px;
+      color: $mainColor;
+      margin-bottom: 10px;
+    }
+    h6 {
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+      color: #444;
+    }
+    .social {
+      margin-top: 15px;
+      span {
+        a {
+          color: #444;
+          font-size: 25px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .first-card {
+    border-right: 0 !important;
+  }
+}
+
+.contact-us-form{
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px;
+  box-shadow: 0 2.9px 14.3px -13px rgba(0, 0, 0, 0.14),
+  0 23px 114px -13px rgba(0, 0, 0, 0.28);
+  .form-control{
+    height: calc(1.5em + .75rem + 20px);
+  }
+  .form-textarea{
+    height: auto;
+  }
+  .btn-submit{
+    text-align: center;
+    .btn{
+      border-radius: 0;
+      background-color: #000;
+      width: 15%;
+      padding: 10px;
+      color: #fff;
+    }
+  }
+}
+
+// start our product tabs
+.tabs-product {
+  text-align: center;
+  margin-top: 50px;
+  .nav {
+    width: 50%;
+    margin: auto;
+    .nav-item {
+      .nav-link {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        display: inline-block;
+        width: 100px;
+        margin-left: 10px;
+      }
+      .active {
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.tab-product-content{
+  .card {
+    border: 0;
+    margin-top: 30px;
+    img {
+      width: 90%;
+      margin: auto;
+      height: 340px;
+    }
+    h5 {
+      margin-top: 20px;
+    }
+    .btn {
+      border: 1px solid #000;
+      width: 50%;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .tabs-product {
+    .nav {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    .navbar-brand {
+      position: unset;
+      text-align: right;
+    }
+    .nav-item-left{
+      position: unset !important;
+      left: 0;
+    }
+    .navbar-nav{
+      text-align: center;
+    }
+  }
+  .who-us {
+    .who-us-content {
+      width: 50%;
+    }
+  }
+  footer {
+    .logo-content-logo {
+      padding-right: 0px !important;
+    }
+    .help-content,
+    .social-content {
+      padding-right: 0 !important;
+    }
+    .logo-funun {
+      width: 60% !important;
+      float: left;
+      img {
+        width: 20%;
+      }
+    }
+  }
+  .who-us-content {
+    .content .par {
+      margin-top: 30px;
+    }
+  }
+  .our-product-content {
+    .our-produc-img{
+      height: 700px;
+    }
+    .our-product-info{
+      margin-top: 0;
+    }
+  }
+  .tabs-product {
+    .nav {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 524px) {
+  .navbar {
+    .navbar-brand {
+      width: 70%; 
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .header {
+    .header-content {
+      h5 {
+        font-size: 30px;
+      }
+    }
+  }
+  .who-us {
+    .who-us-content {
+      width: 90%;
+    }
+  }
+  footer {
+    .help-content,
+    .social-content {
+      padding-right: 0 !important;
+    }
+    .copy {
+      .logo-funun {
+        width: 100% !important;
+        text-align: right;
+        img {
+          width: 40% !important;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .our-product-content {
+    .our-produc-img{
+      height: 400px;
+    }
+  }
+  .contact-information {
+    .card {
+      border-right: 0 !important;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f5f5f5 !important;
+    }
+  }
+  .tabs-product {
+    .nav {
+      width: 100%;
+      .nav-item{
+        width: 100%;
+        .nav-link{
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .contact-us-form{
+    .btn-submit{
+      .btn{
+        width: 30%;
+      }
+    }
+  } 
+}
