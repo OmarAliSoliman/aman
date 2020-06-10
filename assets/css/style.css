@@ -284,6 +284,12 @@ footer {
   margin-top: 85px;
   margin-bottom: 40px;
   font-weight: bold; }
+.get-service-form .btn {
+  background-color: #000000;
+  color: #fff;
+  width: 20%;
+  border: 0;
+  margin-top: 20px; }
 
 .our-product-content {
   margin-top: 50px; }
