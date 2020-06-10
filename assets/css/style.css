@@ -37,11 +37,12 @@ img {
       border-radius: 20px; }
       .navbar .navbar-nav .active .nav-link {
         color: #000; }
-  .navbar .nav-item-left {
+  .navbar .nav-item:nth-last-child(1) {
     position: absolute;
     left: 0; }
-  .navbar .nav-item-lettle-left {
-    left: 120px; }
+  .navbar .nav-item:nth-last-child(2) {
+    position: absolute;
+    left: 130px; }
   .navbar .navbar-toggler:focus {
     outline: 0; }
   .navbar .navbar-toggler-icon {
