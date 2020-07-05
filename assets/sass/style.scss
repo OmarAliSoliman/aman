@@ -83,6 +83,18 @@ img {
       outline: 0;
     }
   }
+  .lang{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+    position: absolute;
+    left: 40px;
+  }
 }
 
 // start header
@@ -582,8 +594,16 @@ footer {
       position: unset !important;
       left: 0;
     }
-    .navbar-nav{
+    .navbar-collapse{
       text-align: center;
+    }
+    .navbar-nav{
+      
+      text-align: center;
+    }
+    .lang{
+      position: unset;
+      margin-top: 20px;
     }
   }
   .who-us {
@@ -623,6 +643,15 @@ footer {
   .tabs-product {
     .nav {
       width: 80%;
+    }
+  }
+  .navbar{
+    .nav-item:nth-last-child(1){
+      position: unset;
+    }
+  
+    .nav-item:nth-last-child(2){
+      position: unset;
     }
   }
 }
